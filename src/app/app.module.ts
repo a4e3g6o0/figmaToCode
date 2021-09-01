@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SimpleCardComponent } from './simple-card/simple-card.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SimpleCardComponent
+    SimpleCardComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
