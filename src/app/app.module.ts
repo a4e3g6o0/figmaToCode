@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SimpleCardComponent } from './simple-card/simple-card.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LandingMenuComponent } from './landing-menu/landing-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SimpleCardComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    LandingMenuComponent
   ],
   imports: [
     BrowserModule,

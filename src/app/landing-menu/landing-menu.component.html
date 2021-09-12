@@ -1,0 +1,19 @@
+<div class="main">
+  <div class="side-panel" *ngIf="shouldShowMenu">
+    <ul>
+      <li (click)="shouldShowMenu = false">
+        <img class="back" src="../../assets/icons/back-arrow.svg" />
+      </li>
+      <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
+  </div>
+  <div>
+    <div class="header">
+      <img
+        src="../../assets/icons/hamburguer.svg"
+        (click)="shouldShowMenu = true"
+      />
+      <h4>LOGO</h4>
+    </div>
+  </div>
+</div>
