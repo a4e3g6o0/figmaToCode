@@ -1,19 +1,35 @@
 <div class="main">
   <div class="side-panel" *ngIf="shouldShowMenu">
     <ul>
-      <li (click)="shouldShowMenu = false">
-        <img class="back" src="../../assets/icons/back-arrow.svg" />
+      <li class="back" (click)="shouldShowMenu = false">
+        <img src="../../assets/icons/back-arrow.svg" />
       </li>
       <li *ngFor="let item of items">{{ item }}</li>
     </ul>
   </div>
-  <div>
+  <div class="content">
     <div class="header">
       <img
         src="../../assets/icons/hamburguer.svg"
         (click)="shouldShowMenu = true"
       />
       <h4>LOGO</h4>
+    </div>
+
+    <div>
+      <h1>
+        DATA <br />
+        ANALYTICS
+      </h1>
+      <p class="description">
+        Making sense of <br />
+        your traffic.
+      </p>
+
+      <a href="#" class="submit">
+        <img src="../../assets/icons/front-arrow.svg" />
+        Go to my stats</a
+      >
     </div>
   </div>
 </div>

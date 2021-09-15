@@ -1,3 +1,24 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.content {
+  width: auto;
+}
+
+/* .content:before {
+  content: "";
+  position: absolute;
+  width: 414px;
+  height: 100%;
+  background-image: url(../../assets/images/mountain.jpg);
+  background-size: cover;
+  background-position: 100%;
+  opacity: 0.22;
+} */
+
 li {
   list-style-type: none;
   color: white;
@@ -28,6 +49,7 @@ ul {
   width: 414px;
   height: 100vh;
   display: grid;
+  background-color: #221f26;
 }
 
 img {
@@ -39,8 +61,54 @@ img {
   justify-content: center;
 }
 
+h4 {
+  color: #2d7dff;
+}
+
+h1 {
+  color: white;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.description {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 111.4%;
+
+  color: #847d93;
+}
+
+.submit {
+  border: 1px solid #4d4d4d;
+  text-decoration: none;
+  color: white;
+  padding: 20px 24px 20px 50px;
+}
+
 @media only screen and (min-width: 768px) {
+  .header {
+    justify-content: flex-start;
+  }
+
   .header img {
+    display: none;
+  }
+
+  h4,
+  h1,
+  p,
+  .submit {
+    margin-left: 103px;
+  }
+
+  .back {
     display: none;
   }
 
@@ -52,4 +120,12 @@ img {
     width: 100vw;
     grid-template-columns: 214px auto;
   }
+
+  .content {
+    width: inherit;
+  }
+
+  /* .content:before {
+    width: 100%;
+  } */
 }
