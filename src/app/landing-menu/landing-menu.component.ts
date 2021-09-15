@@ -15,8 +15,6 @@ export class LandingMenuComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    if (event.target.innerWidth > 768) {
-      this.shouldShowMenu = true;
-    }
+    this.shouldShowMenu = event.target.innerWidth > 768;
   }
 }
