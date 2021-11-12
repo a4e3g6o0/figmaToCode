@@ -1,8 +1,16 @@
 <div class="body">
   <div class="container">
     <div class="left-col">
-      <nav>
-        <img src="../../assets/icons/back-arrow.svg" class="back-btn" />
+      <nav
+        [ngStyle]="{
+          transform: openMenu ? 'translateX(0)' : 'translateX(-100%)'
+        }"
+      >
+        <img
+          src="../../assets/icons/back-arrow.svg"
+          class="back-btn"
+          (click)="openMenu = false"
+        />
         <ul>
           <li><a href="#" class="active">Home</a></li>
           <li><a href="#">My Stats</a></li>
@@ -14,7 +22,11 @@
     </div>
     <section>
       <header>
-        <img src="../../assets/icons/hamburguer.svg" class="menu-btn" />
+        <img
+          src="../../assets/icons/hamburguer.svg"
+          class="menu-btn"
+          (click)="openMenu = true"
+        />
         <p class="logo">Logo</p>
       </header>
       <div class="cv">
