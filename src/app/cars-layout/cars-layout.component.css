@@ -1,0 +1,123 @@
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-color: #e5e5e5;
+  padding: 10px 100px;
+}
+
+main,
+header {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  color: white;
+  background: #008ad8;
+  border-radius: 6px;
+  height: 55px;
+  align-items: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  width: inherit;
+  align-items: center;
+}
+
+.header label,
+.row label {
+  padding-left: 30px;
+}
+
+.search {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.search span {
+  margin-right: auto;
+}
+
+.search input {
+  width: 242px;
+  height: 39px;
+
+  background: #ffffff;
+  border-radius: 36px;
+  border: none;
+}
+
+.search-input i {
+  position: absolute;
+  padding-left: 220px;
+}
+
+.search img {
+  align-self: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 414px) {
+  .body {
+    padding: 0;
+    height: auto;
+  }
+
+  main,
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .row {
+    grid-template-areas: "t t" "d d" "p s";
+    grid-template-columns: none;
+    background-color: red;
+    border-radius: 6px;
+    height: 177px;
+    width: 362px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    grid-area: t;
+  }
+
+  .description {
+    grid-area: d;
+  }
+
+  .price {
+    grid-area: p;
+  }
+
+  .like {
+    grid-area: s;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}

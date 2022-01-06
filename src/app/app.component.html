@@ -1,20 +1,24 @@
-<div class="header">
-  <a [routerLink]="['simple-card']" routerLinkActive="router-link-active"
-    >Simple Card</a
-  >
-  <a [routerLink]="['landing-page']" routerLinkActive="router-link-active"
-    >Landing Form</a
-  >
-
-  <a [routerLink]="['landing-menu']" routerLinkActive="router-link-active"
-    >Landing Menu</a
-  >
-
-  <a
-    [routerLink]="['landing-menu-original']"
-    routerLinkActive="router-link-active"
-    >Landing Menu Original</a
-  >
+<div class="app-content">
+  <header class="header">
+    <a [routerLink]="['simple-card']" routerLinkActive="router-link-active"
+      >Simple Card</a
+    >
+    <a [routerLink]="['landing-page']" routerLinkActive="router-link-active"
+      >Landing Form</a
+    >
+    <a [routerLink]="['landing-menu']" routerLinkActive="router-link-active"
+      >Landing Menu</a
+    >
+    <a
+      [routerLink]="['landing-menu-original']"
+      routerLinkActive="router-link-active"
+      >Landing Menu Original</a
+    >
+    <a [routerLink]="['cars-layout']" routerLinkActive="router-link-active"
+      >Cars Layout</a
+    >
+  </header>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-
-<router-outlet></router-outlet>

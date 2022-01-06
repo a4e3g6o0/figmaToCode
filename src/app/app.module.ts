@@ -7,6 +7,7 @@ import { SimpleCardComponent } from './simple-card/simple-card.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LandingMenuComponent } from './landing-menu/landing-menu.component';
 import { LandingMenuOriginalComponent } from './landing-menu-original/landing-menu-original.component';
+import { CarsLayoutComponent } from './cars-layout/cars-layout.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LandingMenuOriginalComponent } from './landing-menu-original/landing-me
     SimpleCardComponent,
     LandingPageComponent,
     LandingMenuComponent,
-    LandingMenuOriginalComponent
+    LandingMenuOriginalComponent,
+    CarsLayoutComponent
   ],
   imports: [
     BrowserModule,

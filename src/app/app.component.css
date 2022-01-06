@@ -1,4 +1,16 @@
 a {
   color: white;
-  padding-right: 1.5rem;
+}
+
+.app-content {
+  display: grid;
+  grid-template-rows: 30px calc(100% - 30px);
+  grid-template-columns: 100%;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
