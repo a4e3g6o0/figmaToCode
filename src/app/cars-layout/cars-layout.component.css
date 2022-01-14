@@ -16,7 +16,7 @@ header {
 
 .header {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: 40% repeat(3, 20%);
   color: white;
   background: #008ad8;
   border-radius: 6px;
@@ -24,9 +24,13 @@ header {
   align-items: center;
 }
 
+.header label:nth-child(1) {
+  min-width: 285px;
+}
+
 .row {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: 40% repeat(3, 20%);
   width: inherit;
   align-items: center;
 }
@@ -57,7 +61,7 @@ header {
 
 .search-input i {
   position: absolute;
-  padding-left: 220px;
+  margin-left: 220px;
 }
 
 .search img {
@@ -68,6 +72,17 @@ header {
 .search-input {
   display: flex;
   align-items: center;
+}
+
+.title {
+  min-width: 285px;
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #008ad8;
 }
 
 @media (max-width: 414px) {
